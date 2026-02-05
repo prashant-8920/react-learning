@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-container {
+  background: #f1f3f6;
+  padding: 36px 42px;
+  border-radius: 28px;
+  width: 340px;
+  text-align: center;
+
+  box-shadow:
+    12px 12px 24px #cfd3d8,
+    -12px -12px 24px #ffffff;
+}
+
+.app-container h1:first-child {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c2f36;
+  margin-bottom: 8px;
+}
+
+.app-container h1:nth-child(2) {
+  font-size: 52px;
+  font-weight: 700;
+  color: #6c63ff;
+  margin-bottom: 26px;
+}
+
+.app-container button {
+  padding: 14px 34px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+
+  background: #f1f3f6;
+  color: #6c63ff;
+
+  box-shadow:
+    inset 4px 4px 8px #cfd3d8,
+    inset -4px -4px 8px #ffffff;
+
+  transition: all 0.25s ease;
+}
+
+.app-container button:hover {
+  box-shadow:
+    6px 6px 12px #cfd3d8,
+    -6px -6px 12px #ffffff;
+  transform: translateY(-2px);
+}
+
+.app-container button:active {
+  box-shadow:
+    inset 6px 6px 12px #cfd3d8,
+    inset -6px -6px 12px #ffffff;
+}
+
+@media (max-width: 420px) {
+  .app-container {
+    width: 90%;
+    padding: 28px;
+  }
+
+  .app-container h1:nth-child(2) {
+    font-size: 44px;
+  }
+}
