@@ -11,6 +11,7 @@ const App = () => {
         'https://jsonplaceholder.typicode.com/users'
       )
       setAllData(response.data)
+
     } catch (error) {
       console.error(error)
     }
