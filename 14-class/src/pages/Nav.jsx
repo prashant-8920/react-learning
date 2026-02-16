@@ -4,7 +4,7 @@ const Nav = (props) => {
 
     const [newTheme, setNewTheme] = useState('')
   return (
-    <div className='nav'>
+    <div className = 'nav'>
       <form onSubmit={(e)=>{
             e.preventDefault()
             props.changeTheme(newTheme)
